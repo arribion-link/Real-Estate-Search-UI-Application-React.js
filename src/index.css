@@ -57,6 +57,32 @@ section{
 }
 
 
+.hero-filter-container{
+  /* display: flex; */
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 13rem;
+}
+
+.hero-filter-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-filter-header img{
+  width: 100%;
+  height: auto;
+  max-width: 10rem;
+}
+
+.hero-filter-container .filter-sections{
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /* ABOUT US SECTION */
 
 .about-us-text-content{

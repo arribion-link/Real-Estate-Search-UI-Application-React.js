@@ -1,4 +1,5 @@
 import NavBar from "../components/Partials/NavBar"
+import HeroFilter from "../components/UI/HeroFilter"
 const Hero = () => {
   return (
       <>
@@ -9,7 +10,8 @@ const Hero = () => {
                 Helping you find your dream Home,
                 One propery at a time.
                 Your satisfaction is our Priority
-            </p>
+        </p>
+        <HeroFilter/>
         </section>
     </>
   )
