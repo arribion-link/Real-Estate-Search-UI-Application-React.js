@@ -1,4 +1,4 @@
-import HowItWorks from "../components/Partials/HowItWorks";
+import HowItWorks from "../section/HowItWorks";
 import Hero from "../section/Hero";
 const Home = () => {
   return (
