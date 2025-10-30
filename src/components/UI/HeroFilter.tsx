@@ -14,7 +14,8 @@ const HeroFilter = () => {
           <div>
             <img src={usersImage} alt="" />
           </div>
-        </div>
+              </div>
+              <hr />
         <div className="filter-sections">
           <div>
             <h2>Loacation</h2>
