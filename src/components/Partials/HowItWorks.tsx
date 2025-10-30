@@ -2,7 +2,7 @@ import "../../css/HowItWorks.css";
 import verifyIllustration from "../../assets/verify-illustration.png";
 import dealIllustration from "../../assets/deal-illustration.png";
 import searchIllustration from "../../assets/search-illustration.png";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function HowItWorks() {
   const steps = [
@@ -29,13 +29,48 @@ export default function HowItWorks() {
     },
   ];
 
-  const [currentStep, setCurrentStep] = useState(steps[0]);
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const stepTime = 5000;
+  const intervalRef = useRef<number | null>(null);
+
   const stepColorClass = "step-black";
+  const currentStep = steps[currentStepIndex];
+
+  const playSteps = () => {
+    setIsPlaying((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (isPlaying) {
+      intervalRef.current = window.setInterval(() => {
+        setCurrentStepIndex((prevIndex) =>
+          prevIndex + 1 >= steps.length ? 0 : prevIndex + 1
+        );
+      }, stepTime);
+    } else {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [isPlaying, steps.length]);
+
+  const handleStepClick = (stepId: number) => {
+    setCurrentStepIndex(stepId - 1);
+    setIsPlaying(false);
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
 
   return (
     <section className="how-it-works-section">
       <div className="how-it-works-text-content">
-        <button>How it works</button>
+        <button onClick={playSteps}>
+          How it works {isPlaying ? "Pause" : "Play"}
+        </button>
         <h2>How it works</h2>
 
         <ul className="steps">
@@ -45,7 +80,7 @@ export default function HowItWorks() {
               className={`step ${
                 currentStep.id === step.id ? stepColorClass : ""
               }`}
-              onClick={() => setCurrentStep(step)}
+              onClick={() => handleStepClick(step.id)}
             >
               <span>{`0${step.id}`}</span>
               <h5>{step.title}</h5>
