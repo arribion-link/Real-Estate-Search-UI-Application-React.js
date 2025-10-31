@@ -1,0 +1,97 @@
+/* some repeating styles */
+.flx {
+  display: flex;
+}
+.flx.col {
+  flex-direction: column;
+}
+/* Faqs section styles */
+.faq-heading {
+  margin: 0;
+}
+.faqs-container {
+  gap: 1em;
+  justify-content: space-around;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-image: url("../assets/3d-effect-question-background.png");
+}
+
+/* FaqCard Styles */
+.faq-card {
+  color: white;
+  background-image: url("../assets/single-faq-background-image.jpg");
+  position: relative;
+  justify-content: space-between;
+  border: 1px solid yellowgreen;
+  width: clamp(300px, 100%, 600px);
+  border-radius: 25px;
+  padding: 1em;
+}
+.faq-card p {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.faq-card.expanded p {
+  max-height: 500px; /* big enough to fit your answer */
+  opacity: 1;
+}
+
+.faq-card:hover {
+  border-color: lime;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+.faq-card h3,
+.faq-feedback span {
+  cursor: pointer;
+}
+
+/* Faq feedback element styles */
+.faq-feedback {
+  align-self: flex-end;
+}
+.options.flx {
+  justify-content: space-around;
+}
+.faq-feedback {
+  border: 1px solid yellow;
+  font-size: small;
+  border-radius: 16px;
+  padding: 0.3rem;
+  margin: 0;
+  transition: all 2s ease-in-out;
+  animation: feedback-anim 2s linear;
+}
+
+@keyframes feedback-anim {
+  0% {
+    opacity: 0.4;
+    font-size: 14px;
+    border: 3px solid yellowgreen;
+    border-radius: 20px;
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    opacity: 1;
+    font-size: small;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .faqs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-card {
+    width: 90%;
+  }
+}
