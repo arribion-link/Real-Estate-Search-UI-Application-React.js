@@ -1,4 +1,4 @@
-import usersImage from "../../assets/users.png"
+import usersImage from "../../assets/users-hero.png"
 
 const HeroFilter = () => {
   return (
