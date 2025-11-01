@@ -1,5 +1,6 @@
 import HowItWorks from "../section/HowItWorks";
 import Hero from "../section/Hero";
+import Faqs from "../section/Faqs";
 const Home = () => {
   return (
     <>
@@ -29,7 +30,8 @@ const Home = () => {
 
       <section className="populer"></section>
 
-      <section className="faq-section"></section>
+      {/*Faqs section */}
+      <Faqs />
 
       <section className="contact-section"></section>
     </>
