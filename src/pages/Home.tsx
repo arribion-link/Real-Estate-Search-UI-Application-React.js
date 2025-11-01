@@ -1,4 +1,5 @@
 import HowItWorks from "../section/HowItWorks";
+import Faqs from "../section/Faqs";
 import Hero from "../section/Hero";
 import Faqs from "../section/Faqs";
 const Home = () => {
