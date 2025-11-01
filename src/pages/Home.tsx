@@ -6,9 +6,9 @@ const Home = () => {
     <>
       {/* Hero section embebed with navbar for a sleek modern look */}
       <Hero />
-      {/*  */}
 
       {/* ABOUT US SECTION */}
+
       <section className="about-section">
         <div className="about-us-text-content">
           <span>ABOUT</span>
@@ -27,12 +27,10 @@ const Home = () => {
       <HowItWorks />
 
       <section className="explore-section"></section>
-
       <section className="populer"></section>
 
       {/* Faqs section */}
       <Faqs />
-
       <section className="contact-section"></section>
     </>
   );
