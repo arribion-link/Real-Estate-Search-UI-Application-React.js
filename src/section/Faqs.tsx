@@ -1,4 +1,4 @@
-import FaqCard from "../components/Partials/FaqCard";
+import FaqCard from "../components/UI/FaqCard";
 import "../css/Faqs.css";
 export default function Faqs() {
   const faqs = [
