@@ -4,16 +4,21 @@ type faq = {
   question: string;
   answer: string;
 };
+
 type FaqProps = {
   faq: faq;
 };
+
 export default function FaqCard({ faq }: FaqProps) {
+
   const { question, answer } = faq;
   const [isExpanded, setIsExpanded] = useState(false);
   const [showFeedBackMenu, setShowFeedBackMenu] = useState(false);
+  
   const handleClick = () => {
     setIsExpanded(!isExpanded);
   };
+
   useEffect(() => {
     let timer: number | undefined;
 
