@@ -2,7 +2,7 @@ import "../css/HowItWorks.css";
 import verifyIllustration from "../assets/verify-illustration.jpg";
 import dealIllustration from "../assets/deal-illustration.jpg";
 import searchIllustration from "../assets/search-illustration.jpg";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function HowItWorks() {
   const steps = [

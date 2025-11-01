@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-// import {useState } from "react";
 
 const NavBar = () => {
-  // const [activeNav, setActiveNav] = useState(true);
+ 
   return (
     <header>
       <Link to="/" className="logo">
@@ -12,11 +11,9 @@ const NavBar = () => {
         <ul>
           <Link to="">
             <li>List Property</li>
-           {/* { {activeNav }:<hr />{   } } */}
           </Link>
           <Link to="">
             <li>Rent Property</li>
-            <hr />
           </Link>
           <Link to="">
             <li>About Us</li>
