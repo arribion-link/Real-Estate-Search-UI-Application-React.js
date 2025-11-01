@@ -1,7 +1,7 @@
 import "../css/HowItWorks.css";
-import verifyIllustration from "../assets/verify-illustration.png";
-import dealIllustration from "../assets/deal-illustration.png";
-import searchIllustration from "../assets/search-illustration.png";
+import verifyIllustration from "../assets/verify-illustration.jpg";
+import dealIllustration from "../assets/deal-illustration.jpg";
+import searchIllustration from "../assets/search-illustration.jpg";
 import { useState } from "react";
 
 export default function HowItWorks() {
