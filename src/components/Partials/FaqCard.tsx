@@ -20,7 +20,7 @@ export default function FaqCard({ faq }: FaqProps) {
     if (isExpanded) {
       timer = window.setTimeout(() => {
         setShowFeedBackMenu(true);
-      }, 7000);
+      }, 3000);
     } else {
       setShowFeedBackMenu(false);
     }
