@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
+// import {useState } from "react";
+
 const NavBar = () => {
+  // const [activeNav, setActiveNav] = useState(true);
   return (
     <header>
-    <Link to="/">
-        <h1>CO.HAVEN</h1>
-    </Link>
+      <Link to="/" className="logo">
+        <h1 className="lgo">CO.HAVEN</h1>
+      </Link>
       <nav>
         <ul>
           <Link to="">
-            <li>Sell Property</li>
+            <li>List Property</li>
+           {/* { {activeNav }:<hr />{   } } */}
           </Link>
           <Link to="">
-            <li>Buy Property</li>
-          </Link>
-          <Link to="">
-            <li>Rent</li>
+            <li>Rent Property</li>
+            <hr />
           </Link>
           <Link to="">
             <li>About Us</li>
@@ -22,9 +24,9 @@ const NavBar = () => {
           <Link to="">
             <li>Resourses</li>
           </Link>
-              </ul>
-              <button>Login</button>
+        </ul>
       </nav>
+      <button>Login</button>
     </header>
   );
 }
