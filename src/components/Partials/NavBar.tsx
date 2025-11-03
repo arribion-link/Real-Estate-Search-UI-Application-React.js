@@ -1,29 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
  
   return (
     <header>
       <Link to="/" className="logo">
-        <h1 className="lgo">CO.HAVEN</h1>
+        <h3 className="lgo">HAVEN-SQURES</h3>
       </Link>
       <nav>
         <ul>
-          <Link to="">
-            <li>List Property</li>
-          </Link>
-          <Link to="">
+          <NavLink to="">
+            <li>Link Property</li>
+          </NavLink>
+          <NavLink to="">
             <li>Rent Property</li>
-          </Link>
-          <Link to="">
+          </NavLink>
+          <NavLink to="">
             <li>About Us</li>
-          </Link>
-          <Link to="">
+          </NavLink>
+          <NavLink to="">
             <li>Resourses</li>
-          </Link>
+          </NavLink>
         </ul>
       </nav>
+      <Link to="/auth/login">
       <button>Login</button>
+      </Link>
     </header>
   );
 }

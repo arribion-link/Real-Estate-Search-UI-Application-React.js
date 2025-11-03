@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root{
   background-color: rgb(240, 240, 240);
   color: rgb(43, 43, 43);
@@ -29,6 +31,8 @@ header{
   justify-content: space-between;
   padding: 1em;
   align-items: center;
+  background-color: black;
+  color: white;
 }
 
 header nav {
@@ -63,17 +67,17 @@ section{
 
 /* HERO SECTION */
 .hero-section{
-  background-color: rgb(0, 157, 255);
+  background-color: gainsboro;
   border-radius: 10px;
   margin: 1em;
   padding: 1em;
-  background-image: linear-gradient( rgba(255, 255, 255, 0.116), rgba(0, 98, 255, 0.091)), url( /assets/hero.jpg);
+  background-image: linear-gradient( rgba(255, 255, 255, 0.116), rgba(0, 98, 255, 0.091)), url(../assets/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   bottom: 0;
   left: 0;
-  min-height: 95vh;
+  min-height: 85vh;
   color: rgb(35, 35, 35);
 }
 
@@ -84,13 +88,14 @@ section{
 
 .hero-filter-container{
   /* display: flex; */
-  background-color: rgba(255, 255, 255, 0.025);
-  backdrop-filter: blur(10px);
+  background-color: rgba(42, 42, 44, 0.797);
+  backdrop-filter: blur(5px);
   padding: 1em;
   border-radius: 10px;
   position: relative;
-  margin-top: 13rem;
+  margin-top: 11rem;
   border: 1px solid dodgerblue;
+  color: white;
 }
 
 .hero-filter-header{

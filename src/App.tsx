@@ -1,14 +1,21 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-
+import NavBar from "./components/Partials/NavBar";
+import PageNotFound from "./utils/PageNotFound";
+import Home from "./pages/landing/Home";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
 const App = () => {
   return (
-    <div>
+    <>
+      <NavBar/>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/auth/Login" element={<Login />} />
+        <Route path="/auth/Register" element={<Register />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </div>
-  )
+    </>
+  );
 }
 
 export default App

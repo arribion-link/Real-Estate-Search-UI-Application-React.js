@@ -1,6 +1,6 @@
-import HowItWorks from "../section/HowItWorks";
-import Faqs from "../section/Faqs";
-import Hero from "../section/Hero";
+import HowItWorks from "./section/HowItWorks";
+import Faqs from "./section/Faqs";
+import Hero from "./section/Hero";
 const Home = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Home = () => {
       <section className="about-section">
         <div className="about-us-text-content">
           <span>ABOUT</span>
-          <h3>
+          <h3 className="">
             We're your trusted partner in real estate. With 10years of
             experience in Kenya, our team of experts is dedicated to providing
             personalized service and achieving the best possible results. From
