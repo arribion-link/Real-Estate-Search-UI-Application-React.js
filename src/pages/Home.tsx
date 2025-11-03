@@ -1,7 +1,6 @@
 import HowItWorks from "../section/HowItWorks";
 import Faqs from "../section/Faqs";
 import Hero from "../section/Hero";
-
 const Home = () => {
   return (
     <>
