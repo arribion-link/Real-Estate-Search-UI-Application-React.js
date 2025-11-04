@@ -1,37 +1,74 @@
 import HowItWorks from "./section/HowItWorks";
 import Faqs from "./section/Faqs";
 import Hero from "./section/Hero";
+import AboutFeaturedHomeCard from "../../components/UI/AboutFeaturedHomeCard";
+import ExploreOpportunities from "../../components/UI/ExploreOpportunities";
+import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 const Home = () => {
   return (
     <>
       {/* Hero section embebed with navbar for a sleek modern look */}
       <Hero />
+      {/*  */}
 
       {/* ABOUT US SECTION */}
-
       <section className="about-section">
         <div className="about-us-text-content">
           <span>ABOUT</span>
-          <h3 className="">
-            We're your trusted partner in real estate. With 10years of
-            experience in Kenya, our team of experts is dedicated to providing
-            personalized service and achieving the best possible results. From
-            finding your dream home to selling your property at the right price,
+          <h3 className="text-[clamp(1rem,5vw,3rem)]">
+            We're your trusted partner in real estate.{" "}
+            <span className="text-gray-300">
+              {" "}
+              With 10years of experience in Kenya, our team of experts is{" "}
+            </span>{" "}
+            dedicated to providing personalized service and achieving the best
+            possible results.{" "}
+            <span className="text-gray-300">
+              {" "}
+              From finding your dream home to selling your property at the right
+              price,
+            </span>
             we're here to guide you every step of the way
           </h3>
         </div>
-        <div className="about-us-image-section"></div>
+        <div className="about-carosel-section">
+          <AboutFeaturedHomeCard />
+        </div>
       </section>
+      {/*  */}
 
       {/* HOW IT WORKS SECTION */}
       <HowItWorks />
+      {/*  */}
 
-      <section className="explore-section"></section>
-      <section className="populer"></section>
+      {/* EXPLORE SECTION */}
+      <section className="explore-section mt-24 bg-gray-400 p-4">
+        <div className="explore-container">
+          <ExploreOpportunities />
+        </div>
+      </section>
+      {/*  */}
+
+      {/* TOP PICKS RENT PROPERTIES */}
+      <section className="populer">
+        <div className="flex justify-between ">
+          <h1>Top Picks Rent Propety</h1>
+          <div className="flex">
+            <IoArrowBackCircleOutline size={45} />
+            <IoArrowForwardCircleOutline size={45} />
+          </div>
+        </div>
+      </section>
+      {/*  */}
 
       {/*Faqs section */}
       <Faqs />
+      {/*  */}
+
+      {/* CONTACT US SECTION */}
       <section className="contact-section"></section>
+      {/*  */}
     </>
   );
 };

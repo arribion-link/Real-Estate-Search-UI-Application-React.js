@@ -5,29 +5,31 @@
 .flx.col {
   flex-direction: column;
 }
+
 /* Faqs section styles */
-.faq-heading {
-  margin: 0;
-}
 .faqs-container {
   gap: 1em;
-  justify-content: space-around;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
-  background-image: url("../assets/3d-effect-question-background.png");
+  justify-content: space-around; 
+  background-color: gray;
+  /* -webkit-backdrop-filter: blur(30px); */
+  /* backdrop-filter: blur(30px); */
+  /* background-image: url("../assets/3d-effect-question-background.png"); */
 }
 
 /* FaqCard Styles */
 .faq-card {
+  /* background-color: gray; */
   color: white;
-  background-image: url("../assets/single-faq-background-image.jpg");
+  backdrop-filter: (15px);
+  /* background-image: url("../assets/single-faq-background-image.jpg"); */
   position: relative;
   justify-content: space-between;
-  border: 1px solid yellowgreen;
+  border: 1px solid rgb(56, 65, 75);
   width: clamp(300px, 100%, 600px);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 1em;
 }
+
 .faq-card p {
   overflow: hidden;
   max-height: 0;
@@ -41,7 +43,7 @@
 }
 
 .faq-card:hover {
-  border-color: lime;
+  border-color: rgb(0, 101, 164);
   transform: scale(1.01);
   transition: all 0.3s ease;
 }
@@ -59,7 +61,7 @@
   justify-content: space-around;
 }
 .faq-feedback {
-  border: 1px solid yellow;
+  border: 1px solid rgb(0, 191, 255);
   font-size: small;
   border-radius: 16px;
   padding: 0.3rem;

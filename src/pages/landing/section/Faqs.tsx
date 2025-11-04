@@ -54,12 +54,14 @@ export default function Faqs() {
     },
   ];
   return (
-    <section className="faq-section">
-      <h2 className="faq-heading">Have questions? We can answer them!</h2>
-      <div className="faqs-container flx col">
-        {faqs.map((faq, i) => (
-          <FaqCard key={i + Math.random()} faq={faq} />
-        ))}
+    <section className="">
+      <div>
+        <h1 className="font-bold text-4xl text-center">Have questions? We can answer them!</h1>
+        <div className="faqs-container flx col">
+          {faqs.map((faq, i) => (
+            <FaqCard key={i + Math.random()} faq={faq} />
+          ))}
+        </div>
       </div>
     </section>
   );
