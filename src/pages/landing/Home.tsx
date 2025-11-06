@@ -5,6 +5,7 @@ import AboutFeaturedHomeCard from "../../components/UI/AboutFeaturedHomeCard";
 import ExploreOpportunities from "../../components/UI/ExploreOpportunities";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import CtaForm from "../../components/UI/CtaForm";
 const Home = () => {
   return (
     <>
@@ -67,7 +68,25 @@ const Home = () => {
       {/*  */}
 
       {/* CONTACT US SECTION */}
-      <section className="contact-section"></section>
+      <section className="contact-section p-4 bg-black text-gray-100 rounded-2xl">
+        <div className="flex justify-between">
+          <div>
+            <span className="border-2 border-gr p-2 border-gray-400 rounded-3xl">Contact</span>
+            <h2>
+              Still not sure where to start? <br />
+              Contact us  and fill the form.
+            </h2>
+            <p>
+              Contact us and fill out the form, let us know what you need.
+            </p>
+            <div>
+              <img src="" alt="" />
+              <p>4.5(10K Reviews)</p>
+            </div>
+          </div>
+          <CtaForm/>
+        </div>
+      </section>
       {/*  */}
     </>
   );
