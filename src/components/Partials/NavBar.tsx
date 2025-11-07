@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <header>
       <Link to="/" className="logo">
-        <h3 className="lgo">HAVEN-SQURES</h3>
+        <h3 className="lgo font-bold text-blue-400 text-3xl">HAVEN-SQURES</h3>
       </Link>
       <nav>
         <ul>
@@ -24,7 +24,9 @@ const NavBar = () => {
         </ul>
       </nav>
       <Link to="/auth/login">
-      <button>Login</button>
+        <button className="border-1 border-amber-50 rounded-2xl w-40 px-2 py-4 hover:bg-amber-50 hover:text-white  transition duration-300 ease-in-out">
+          Login
+        </button>
       </Link>
     </header>
   );

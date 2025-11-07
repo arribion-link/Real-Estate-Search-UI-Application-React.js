@@ -64,7 +64,7 @@ header nav hr{
 header nav  ul a{
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 
@@ -134,10 +134,123 @@ header nav  ul a{
     margin: 11em 0em;
 }
 
+/* CALL TO ACTION SECTION */
+
+.cta-textual-content{
+  margin: 3em;
+}
+
+.cta-textual-content span{
+  min-width:  10em;
+}
+
+.cta-textual-content h2{
+  font-size: 2em;
+  margin: 1em 0em 0.35em 0em;
+}
+
+.cta-textual-content p{
+  color: gray;
+}
+
+.form-container{
+  background-color: white;
+  border-radius: 10px;
+  margin: 1rem;
+  height: 100%;
+  color: rgb(26, 26, 26);
+  width: 30rem;
+}
+.form{
+  /* background-color: rgb(255, 255, 255); */
+  margin: 1em;
+  height: 100%;
+}
+
+.form-group{
+  margin: 2em 0em;
+}
+
+textarea,
+.form-container input{
+  border: 1px solid gray;
+  padding: 6px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 7px;
+}
+
+textarea {
+  min-height: 5em;
+  max-height: 30em;
+}
+
+/* EXPLORE SECTION */
+
+.explore-container{
+  padding: 1em;
+}
+
+
+.explore-homes-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* TOP PICK SECTION */
+.top-pick-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 4em 0em;
+}
+
+/* FOOTER SECTION */
+
+footer{
+  padding: 2em;
+  margin-top: 4em;
+  min-height: 60vh;
+}
+
+footer h3{
+  margin-bottom: 1em ;
+  color: black;
+  font-weight: 700;
+  font-size: 1.7;
+}
+
+footer li{
+  transition: color 1s;
+}
+
+footer li:hover{
+  cursor: pointer;
+  color: dodgerblue;
+}
+
 @media(max-width:900px){
     header nav{
       display: none;
     }
+
+    .cta-textual-content p{
+        text-align: center;
+    }
+
+    .contact-section{
+      display: flex;
+      justify-content: center;
+    }
+
+    .cta-home-container{
+      flex-direction: column;
+    }
 }
 
+@media(max-width:900px){
+  
+footer{
+  flex-direction: column;
+}
+}
 

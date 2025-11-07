@@ -6,6 +6,7 @@ import ExploreOpportunities from "../../components/UI/ExploreOpportunities";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import CtaForm from "../../components/UI/CtaForm";
+import HouseCard from "../../components/UI/HouseCard";
 const Home = () => {
   return (
     <>
@@ -44,9 +45,18 @@ const Home = () => {
       {/*  */}
 
       {/* EXPLORE SECTION */}
-      <section className="explore-section mt-24 bg-gray-400 p-4">
-        <div className="explore-container">
-          <ExploreOpportunities />
+      <section className="explore-section mt-24">
+        <span className="text-center">EXPLORE</span>
+        <h1 className="font-bold text-4xl py-5 text-center">Explore our latest property</h1>
+        <div className=" bg-gray-400 p-4">
+          <div className="explore-container flex gap-4">
+            <ExploreOpportunities />
+            <div className="explore-homes-container gap-4">
+              <HouseCard />
+              <HouseCard />
+              <HouseCard />
+            </div>
+          </div>
         </div>
       </section>
       {/*  */}
@@ -54,11 +64,18 @@ const Home = () => {
       {/* TOP PICKS RENT PROPERTIES */}
       <section className="populer">
         <div className="flex justify-between ">
-          <h1>Top Picks Rent Propety</h1>
+          <h1 className="font-bold text-4xl py-5">Top Picks Rent Propety</h1>
           <div className="flex">
             <IoArrowBackCircleOutline size={45} />
             <IoArrowForwardCircleOutline size={45} />
           </div>
+        </div>
+
+        <div className=" top-pick-container gap-4">
+          <HouseCard />
+          <HouseCard />
+          <HouseCard />
+          <HouseCard />
         </div>
       </section>
       {/*  */}
@@ -69,22 +86,24 @@ const Home = () => {
 
       {/* CONTACT US SECTION */}
       <section className="contact-section p-4 bg-black text-gray-100 rounded-2xl">
-        <div className="flex justify-between">
-          <div>
-            <span className="border-2 border-gr p-2 border-gray-400 rounded-3xl">Contact</span>
+        <div className="cta-home-container flex justify-between">
+          <div className="cta-textual-content">
+            <p>
+              <span className="border-1 border-gr p-2 border-gray-400 rounded-3xl">
+                Contact
+              </span>
+            </p>
             <h2>
               Still not sure where to start? <br />
-              Contact us  and fill the form.
+              Contact us and fill the form.
             </h2>
-            <p>
-              Contact us and fill out the form, let us know what you need.
-            </p>
+            <p>Contact us and fill out the form, let us know what you need.</p>
             <div>
               <img src="" alt="" />
-              <p>4.5(10K Reviews)</p>
+              <span className="text-yellow-300">4.5(10K Reviews)</span>
             </div>
           </div>
-          <CtaForm/>
+          <CtaForm />
         </div>
       </section>
       {/*  */}

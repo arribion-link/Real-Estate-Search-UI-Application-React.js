@@ -7,6 +7,7 @@ const Footer = () => {
         <div>
           <h3>ABOUT</h3>
           <p>Lorem, ipsum dolor sit amet consectetur?</p>
+          <p className="copyright">&copy; { Date.now() } HavenSquare. All Rights Reserved.</p>
         </div>
         <div>
           <h3>Quick Links</h3>
