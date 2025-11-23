@@ -3,14 +3,14 @@ import ph from "../../assets/placeholder.png";
 const HouseCard = () => {
   return (
       <>
-        <article className="bg-white p-4 rounded-2xl">
-              <img src={ph} alt="" className="rounded-2xl w-full h-auto " />
-              <div>
+        <article className="bg-white">
+              <img src={ph} alt="" className="" />
+              <div className="bg-white border p-4">
                 <div className="flex justify-between">
                     <div>
                     <h2>Sunshine Hostels</h2>
                     </div>
-                    <div className="bg-gray-600 py-6 px-6 rounded">
+                    <div className="bg-gray-600 p4 rounded">
                         ^
                     </div>
                   </div>

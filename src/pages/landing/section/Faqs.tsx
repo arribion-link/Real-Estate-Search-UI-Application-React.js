@@ -1,5 +1,6 @@
 import FaqCard from "../../../components/UI/FaqCard";
 import "../../../css/Faqs.css"
+// import faq from "../../../assets/faq.png"
 export default function Faqs() {
   const faqs = [
     {
@@ -55,12 +56,17 @@ export default function Faqs() {
   ];
   return (
     <section className="">
-      <div>
-        <h1 className="font-bold text-4xl text-center">Have questions? We can answer them!</h1>
-        <div className="faqs-container flx col">
-          {faqs.map((faq, i) => (
-            <FaqCard key={i + Math.random()} faq={faq} />
-          ))}
+      <h1 className="font-bold text-4xl text-center mb-8">Have questions? We can answer them!</h1>
+      <div className="flex justify-center">
+        <div>
+          <div className="faqs-container flx col">
+            {faqs.map((faq, i) => (
+              <FaqCard key={i + Math.random()} faq={faq} />
+            ))}
+          </div>
+        </div>
+        <div>
+          {/* <img src={faq} alt="" className="block max-w-[55em]" /> */}
         </div>
       </div>
     </section>

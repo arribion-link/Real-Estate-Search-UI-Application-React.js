@@ -51,11 +51,9 @@ const Home = () => {
         <div className=" bg-gray-400 p-4">
           <div className="explore-container flex gap-4">
             <ExploreOpportunities />
-            <div className="explore-homes-container gap-4">
-              <HouseCard />
-              <HouseCard />
-              <HouseCard />
-            </div>
+            <HouseCard />
+            <HouseCard />
+            <HouseCard />
           </div>
         </div>
       </section>

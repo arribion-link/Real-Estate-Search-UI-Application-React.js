@@ -34,8 +34,8 @@ export default function FaqCard({ faq }: FaqProps) {
   }, [isExpanded]);
 
   return (
-    <div className={`faq-card flx col ${isExpanded ? "expanded" : ""}`}>
-      <h3 onClick={handleClick} className="text-blue-100 font-bold text-3xl">{question}</h3>
+    <div className={`faq-card p-2 flx col ${isExpanded ? "expanded" : ""}`}>
+      <h3 onClick={handleClick} className="text-blue-400 font-bold text-2xl">{question}</h3>
       {isExpanded && (
         <>
           <p className="text-gray-500">{answer}</p>

@@ -3,13 +3,13 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
  
   return (
-    <header>
+    <header className="flex bg-black justify-between text-white p-4">
       <Link to="/" className="logo">
-        <h3 className="lgo font-bold text-blue-400 text-3xl">HAVEN-SQURES</h3>
+        <h3 className="font-bold text-blue-400 text-2xl">HAVEN-SQURES</h3>
       </Link>
       <nav>
-        <ul>
-          <NavLink to="">
+        <ul className="flex gap-8">
+          <NavLink to="" className="border p-1">
             <li>Link Property</li>
           </NavLink>
           <NavLink to="">
@@ -19,12 +19,18 @@ const NavBar = () => {
             <li>About Us</li>
           </NavLink>
           <NavLink to="">
+            <li>Pricing</li>
+          </NavLink>
+          <NavLink to="">
             <li>Resourses</li>
+          </NavLink>
+          <NavLink to="">
+            <li>Contact Us</li>
           </NavLink>
         </ul>
       </nav>
       <Link to="/auth/login">
-        <button className="border-1 border-amber-50 rounded-2xl w-40 px-2 py-4 hover:bg-amber-50 hover:text-white  transition duration-300 ease-in-out">
+        <button className="border border-amber-50 rounded-4xl w-40 px-4 py-1 hover:bg-white hover:text-black transition duration-500 ease-in-out">
           Login
         </button>
       </Link>
