@@ -10,22 +10,37 @@ const NavBar = () => {
       <nav>
         <ul className="flex gap-8">
           <NavLink to="" className="border p-1">
-            <li>Link Property</li>
+            <li></li>
           </NavLink>
-          <NavLink to="">
-            <li>Rent Property</li>
+          <NavLink to="/properties">
+            <li>Properties</li>
+          </NavLink>
+          <NavLink to="" className="border p-1">
+            <li></li>
           </NavLink>
           <NavLink to="">
             <li>About Us</li>
           </NavLink>
+          <NavLink to="" className="border p-1">
+            <li ></li>
+          </NavLink>
           <NavLink to="">
             <li>Pricing</li>
+          </NavLink>
+          <NavLink to="" className="border p-1">
+            <li></li>
           </NavLink>
           <NavLink to="">
             <li>Resourses</li>
           </NavLink>
+          <NavLink to="" className="border p-1">
+            <li></li>
+          </NavLink>
           <NavLink to="">
             <li>Contact Us</li>
+          </NavLink>
+          <NavLink to="" className="border p-1">
+            <li></li>
           </NavLink>
         </ul>
       </nav>
