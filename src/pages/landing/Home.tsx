@@ -16,10 +16,15 @@ const Home = () => {
 
       {/* ABOUT US SECTION */}
       <section className="about-section">
-        <div className="about-us-text-content">
-          <span>ABOUT</span>
-          <h3 className="text-[clamp(1rem,5vw,3rem)]">
-            We're your trusted partner in real estate.{" "}
+        <span className="text-blue-500">ABOUT</span>
+        <div className="bg-gray-600 rounded-2xl p-4">
+          <AboutFeaturedHomeCard />
+        </div>
+        <div className="text-center ">
+          <h3 className="text-[clamp(1rem,5vw,2rem)]">
+            We're your trusted partner in real estate.
+            {" "}
+            <br />
             <span className="text-gray-300">
               {" "}
               With 10years of experience in Kenya, our team of experts is{" "}
@@ -33,9 +38,6 @@ const Home = () => {
             </span>
             we're here to guide you every step of the way
           </h3>
-        </div>
-        <div className="about-carosel-section">
-          <AboutFeaturedHomeCard />
         </div>
       </section>
       {/*  */}

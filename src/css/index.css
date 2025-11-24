@@ -52,20 +52,7 @@ section{
 
 /*============== ABOUT US SECTION =================== */
 
-.about-us-text-content{
-  text-align: center;
-  margin-top: 5em;
-}
-
-.about-carosel-section{
-    min-height: 50vh;
-    border-radius: 10px;
-    background-color: gray;
-    width: auto;
-    margin: 11em 0em;
-}
-
-/* CALL TO ACTION SECTION */
+/* ============ CALL TO ACTION SECTION====================== */
 
 .cta-textual-content{
   margin: 3em;
@@ -113,7 +100,7 @@ textarea,
 
 textarea {
   min-height: 5em;
-  max-height: 30em;
+  max-height: 15em;
 }
 
 /* EXPLORE SECTION */
