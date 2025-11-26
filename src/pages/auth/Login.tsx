@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
   return (
     <>
-      <section className="auth-section">
+      <section className="auth-section flex justify-center">
         <div className="form-container">
           <h3>Create an Acoount</h3>
           <form action="">

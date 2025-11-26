@@ -1,12 +1,12 @@
 import HowItWorks from "./section/HowItWorks";
 import Faqs from "./section/Faqs";
 import Hero from "./section/Hero";
-import AboutFeaturedHomeCard from "../../components/UI/AboutFeaturedHomeCard";
-import ExploreOpportunities from "../../components/UI/ExploreOpportunities";
+import AboutFeaturedHomeCard from "./components/UI/AboutFeaturedHomeCard";
+import ExploreOpportunities from "./components/UI/ExploreOpportunities";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import CtaForm from "../../components/UI/CtaForm";
-import HouseCard from "../../components/UI/HouseCard";
+import CtaForm from "./components/UI/CtaForm";
+import HouseCard from "./components/UI/HouseCard";
 const Home = () => {
   return (
     <>
@@ -53,9 +53,11 @@ const Home = () => {
         <div className=" bg-gray-400 p-4">
           <div className="explore-container flex gap-4">
             <ExploreOpportunities />
-            <HouseCard />
-            <HouseCard />
-            <HouseCard />
+            <div className="flex gap-2">
+              <HouseCard />
+              <HouseCard />
+              <HouseCard />
+            </div>
           </div>
         </div>
       </section>

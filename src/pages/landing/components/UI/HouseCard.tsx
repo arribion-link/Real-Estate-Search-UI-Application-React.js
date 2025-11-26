@@ -1,4 +1,4 @@
-import ph from "../../assets/images/placeholder.jpg";
+import ph from "../../../../assets/images/placeholder.jpg";
 import { IoPricetagOutline } from "react-icons/io5";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { RiStairsLine } from "react-icons/ri";

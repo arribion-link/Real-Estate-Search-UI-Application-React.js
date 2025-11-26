@@ -1,4 +1,4 @@
-import FaqCard from "../../../components/UI/FaqCard";
+import FaqCard from "../components/UI/FaqCard";
 import "../../../css/Faqs.css"
 // import faq from "../../../assets/faq.png"
 export default function Faqs() {

@@ -124,27 +124,6 @@ textarea {
 
 /* FOOTER SECTION */
 
-footer{
-  padding: 2em;
-  margin-top: 4em;
-  min-height: 60vh;
-}
-
-footer h3{
-  margin-bottom: 1em ;
-  color: black;
-  font-weight: 700;
-  font-size: 1.7;
-}
-
-footer li{
-  transition: color 1s;
-}
-
-footer li:hover{
-  cursor: pointer;
-  color: dodgerblue;
-}
 
 @media(max-width:900px){
     header nav{
