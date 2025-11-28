@@ -15,11 +15,10 @@ const Home = () => {
       {/*  */}
 
       {/* ABOUT US SECTION */}
-      <section className="about-section">
-        <span className="text-blue-500">ABOUT</span>
-        <div className="bg-gray-600 rounded-2xl p-4">
-          <AboutFeaturedHomeCard />
-        </div>
+      <section className="about-section mx-4 my-30">
+        <p
+          className="text-white text-center
+           font-bold border py-2 px-4 rounded bg-gray-400">ABOUT</p>
         <div className="text-center ">
           <h3 className="text-[clamp(1rem,5vw,2rem)]">
             We're your trusted partner in real estate.
@@ -39,6 +38,12 @@ const Home = () => {
             we're here to guide you every step of the way
           </h3>
         </div>
+        <div
+          className="bg-gray-100 rounded-2xl 
+          p-4 bg-[url(../assets/images/about.jpg)]
+          bg-no-repeat bg-center bg-cover min-h-[70vh] mt-8">
+          <AboutFeaturedHomeCard />
+        </div>
       </section>
       {/*  */}
 
@@ -47,7 +52,7 @@ const Home = () => {
       {/*  */}
 
       {/* EXPLORE SECTION */}
-      <section className="explore-section mt-24">
+      <section className="explore-section mt-24 mx-4 my-8">
         <span className="text-center">EXPLORE</span>
         <h1 className="font-bold text-4xl py-5 text-center">Explore our latest property</h1>
         <div className=" bg-gray-400 p-4">
@@ -64,7 +69,7 @@ const Home = () => {
       {/*  */}
 
       {/* TOP PICKS RENT PROPERTIES */}
-      <section className="populer">
+      <section className="populer mx-4 my-8">
         <div className="flex justify-between ">
           <h1 className="font-bold text-4xl py-5">Top Picks Rent Propety</h1>
           <div className="flex">
@@ -87,11 +92,11 @@ const Home = () => {
       {/*  */}
 
       {/* CONTACT US SECTION */}
-      <section className="contact-section p-4 bg-black text-gray-100 rounded-2xl">
+      <section className="contact-section p-4 bg-black text-gray-100 rounded-2xl mx-4 my-16">
         <div className="cta-home-container flex justify-between">
           <div className="cta-textual-content">
             <p>
-              <span className="border-1 border-gr p-2 border-gray-400 rounded-3xl">
+              <span className="border border-gr p-2 border-gray-400 rounded-3xl">
                 Contact
               </span>
             </p>
