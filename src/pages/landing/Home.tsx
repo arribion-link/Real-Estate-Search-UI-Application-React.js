@@ -18,12 +18,12 @@ const Home = () => {
       <section className="about-section mx-4 my-30">
         <p
           className="text-white text-center
-           font-bold border py-2 px-4 rounded bg-gray-400">ABOUT</p>
+           font-bold border py-2 px-4 rounded bg-gray-400">
+          ABOUT
+        </p>
         <div className="text-center ">
           <h3 className="text-[clamp(1rem,5vw,2rem)]">
-            We're your trusted partner in real estate.
-            {" "}
-            <br />
+            We're your trusted partner in real estate. <br />
             <span className="text-gray-300">
               {" "}
               With 10years of experience in Kenya, our team of experts is{" "}
@@ -54,15 +54,15 @@ const Home = () => {
       {/* EXPLORE SECTION */}
       <section className="explore-section mt-24 mx-4 my-8">
         <span className="text-center">EXPLORE</span>
-        <h1 className="font-bold text-4xl py-5 text-center">Explore our latest property</h1>
+        <h1 className="font-bold text-4xl py-5 text-center">
+          Explore our latest property
+        </h1>
         <div className=" bg-gray-400 p-4">
-          <div className="explore-container flex gap-4">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4">
             <ExploreOpportunities />
-            <div className="flex gap-2">
-              <HouseCard />
-              <HouseCard />
-              <HouseCard />
-            </div>
+            <HouseCard />
+            <HouseCard />
+            <HouseCard />
           </div>
         </div>
       </section>
@@ -77,8 +77,7 @@ const Home = () => {
             <IoArrowForwardCircleOutline size={45} />
           </div>
         </div>
-
-        <div className=" top-pick-container gap-4">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4">
           <HouseCard />
           <HouseCard />
           <HouseCard />

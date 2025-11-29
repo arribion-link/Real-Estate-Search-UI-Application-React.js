@@ -8,8 +8,8 @@ import { FaInternetExplorer } from "react-icons/fa";
 const HouseCard = () => {
   return (
     <>
-      <article className="bg-white">
-        <img src={ph} alt="" className="" />
+      <article className="bg-white max-w-[30em]">
+        <img src={ph} alt="" className="max-w-[30em]" />
         <div className="bg-white border p-4">
           <div className="flex justify-between">
             <h3>SunShine</h3>

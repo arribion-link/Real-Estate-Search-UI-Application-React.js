@@ -2,53 +2,22 @@
 
 @layer components{
     .nav-hover{
-      @apply hover:underline decoration-1;
+      @apply **:hover:underline decoration-1;
     }
 }
 
-:root{
-  background-color: rgb(240, 240, 240);
-  color: rgb(43, 43, 43);
+@layer base{
+  a{
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+    color: rgb(43, 43, 43);
+  }
 }
 
-a{
-  text-decoration: none;
-}
-
-/* ==========  HEADER  SECTION  ======== */
-
-/* ========== HERO SECTION ============= */
-.hero-filter-container{
-  background-color: rgba(227, 227, 227, 0.064);
-  backdrop-filter: blur(5px);
-  padding: 1em;
-  border-radius: 10px;
-  position: relative;
-  margin-top: 11rem;
-  border: 1px solid dodgerblue;
-  color: white;
-}
-
-.hero-filter-header{
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero-filter-header img{
-  width: 100%;
-  height: auto;
-  max-width: 10rem;
-}
-
-.hero-filter-container .filter-sections{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-/*============== ABOUT US SECTION =================== */
-
-/* ============ CALL TO ACTION SECTION====================== */
+/* ========== HEADER  SECTION    ======== */
+/* ========== HERO SECTION       ============= */
+/*=========== ABOUT US SECTION   =================== */
+/* ========== CALL TO ACTION SECTION  ====================== */
 
 .cta-textual-content{
   margin: 3em;
@@ -101,22 +70,7 @@ textarea {
 
 /* EXPLORE SECTION */
 
-.explore-container{
-  padding: 1em;
-}
-
-
-.explore-homes-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
 /* TOP PICK SECTION */
-.top-pick-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 4em 0em;
-}
 
 /* FOOTER SECTION */
 
